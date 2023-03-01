@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookurBooks</title>
+    <link rel="stylesheet" href="log.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <div class="formbox">
+        <div class="buttonBox">
+          <div id="button"></div>
+          <button type="button" class="toggleB" onclick="login()">Log In</button>
+          <button type="button" class="toggleB" onclick="register()">Register</button>
+        </div>
+        <form id="login" class="inputGrp">
+
+          <input type="email" class="input" placeholder="Email ID" required>
+          <input type="password" class="input" placeholder="Password" required>
+          <input type="checkBox" class="checkBox"><span>Remember Password</span>
+          <button type="Submit" class="submitBtn"> Log in</button>  
+        </form>
+
+        <form id="register" class="inputGrp">
+
+          <input type="text" class="input" placeholder="Name" required>
+          <input type="email" class="input" placeholder="Email ID" required>
+          <input type="password" class="input" placeholder="Password" required>
+          <input type="checkBox" class="checkBox"><span>I agree to T&C's apply</span>
+          <button type="Submit" class="submitBtn"> Register</button>
+
+          <script>
+            var x= document.getElementById("login");
+            var y= document.getElementById("register");
+            var z= document.getElementById("button");
+
+            function register(){
+              x.style.left="-400px";
+              y.style.left="50px";
+              z.style.left="110px";
+
+            }
+
+            function login(){
+              x.style.left="50px";
+              y.style.left="450px";
+              z.style.left="0px";
+
+            }
+
+            
+          </script>
+          
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
