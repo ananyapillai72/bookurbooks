@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head>
+  <title>BookurBooks</title>
+  <link rel="stylesheet" href="log.css" />
+
+</head>
+
+<body onload='document.text1.focus()'>
+  <div class="navbar">
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="main.html">Bookstore</a>
+    <img src="BookurBookslogo.png" alt="Logo" width="200">
+  </div>
+  
+  <div class="bg">
+    <div class="formbox">
+      <div class="buttonBox">
+        <div id="button"></div>
+        <button type="button" class="toggleB" onclick="login()">Log In</button>
+        <button type="button" class="toggleB" onclick="register()">Register</button>
+      </div>
+      <form id="login" class="inputGrp">
+
+        <input type="email" name="text1" class="input" placeholder="Email ID" required>
+        <input type="password" class="input" placeholder="Password" required>
+        <input type="checkBox" class="checkBox"><span>Remember Password</span>
+        <button type="Submit" class="submitBtn" onclick="ValidateEmail(document.text1)"> Log in</button>
+      </form>
+
+      <form id="register" class="inputGrp">
+
+        <input type="text" class="input" placeholder="Name" required>
+        <input type="email" class="input" placeholder="Email ID" required>
+        <input type="password" class="input" placeholder="Password" required>
+        <input type="checkBox" class="checkBox"><span>I agree to T&C's apply</span>
+        <button type="Submit" class="submitBtn"> Register</button>
+
+        <script>
+          var x = document.getElementById("login");
+          var y = document.getElementById("register");
+          var z = document.getElementById("button");
+
+          function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+
+          }
+
+          function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+
+          }
+
+          function ValidateEmail(inputText) {
+            var mailformat = /^[^@$#&%^!* ]+@somaiya.edu$/;
+            if (inputText.value.match(mailformat)) {
+              document.text1.focus();
+              return true;
+            }
+            else {
+              alert("You have entered an invalid email address!");    //The pop up alert for an invalid email address
+              document.text1.focus();
+              return false;
+            }
+          }
+
+
+        </script>
+
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

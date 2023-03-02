@@ -1,0 +1,76 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .book-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .book-cover {
+    flex-basis: 40%;
+    padding-right: 100px;
+    
+} 
+
+  
+  .book-cover img {
+    max-width: 100%;
+  }
+  
+  .book-details {
+    flex-basis: 55%;
+  }
+  
+  .book-title {
+    font-size: 40px;
+    margin: 0 0 10px;
+  }
+  
+  .book-author {
+    margin: 0 0 20px;
+    font-weight: bold;
+    color: #f44336;
+    
+  }
+  
+  .book-price {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 20px;
+  }
+  
+  .book-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 20px;
+  }
+  
+  .book-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Sell {
+    background-color: #f0c14b;
+    border: none;
+    color: #111;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .Rent {
+    background-color: #f44336;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
