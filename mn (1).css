@@ -55,7 +55,6 @@ hr
     margin-left: 190px;
     width: 50%;
     border-radius: 30px;
-
 }
 
 .box1
@@ -84,4 +83,16 @@ hr
     overflow: hidden;
 }
 
+.car1img img
+{
+    width: 1290px;
+    height: 200px;
+    margin-left: 2%;
+    padding: 5px;
+}
+
+.end
+{
+    color: blueviolet;
+}
 
